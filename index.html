@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>Bienvenue sur Scan&Go+</h1>
-      <p>L’application est en ligne 🎉</p>
-      <!-- Tu pourras ajouter ici le contenu réel de l’application -->
+    <h1>Scan&Go+</h1>
+    <p>Scanne tes produits et maîtrise ton budget !</p>
+
+    <button id="start-scan" class="btn">📷 Scanner un code-barres</button>
+    <div id="reader" style="width: 300px; margin: 20px auto;"></div>
+
+    <p id="info" style="font-weight: bold;"></p>
+
+    <div id="inconnu" style="display:none;">
+      <input type="text" id="nom" placeholder="Nom du produit" />
+      <input type="number" id="prix" placeholder="Prix (€)" />
+      <button id="ajouter" class="btn">Ajouter</button>
     </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
 
 
