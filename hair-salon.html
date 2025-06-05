@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon de Coiffure</title>
+  <link rel="stylesheet" href="/src/hairsalon/style.css" />
+</head>
+<body>
+  <h1>Salon de Coiffure</h1>
+  <p>Bienvenue dans notre salon. Prenez rendez-vous en ligne !</p>
+
+  <form id="booking-form">
+    <input type="text" id="name" placeholder="Votre nom" required />
+    <input type="date" id="date" required />
+    <select id="service" required>
+      <option value="">Choisissez un service</option>
+      <option value="coupe">Coupe</option>
+      <option value="coloration">Coloration</option>
+      <option value="shampoing">Shampoing & brushing</option>
+    </select>
+    <button type="submit">Réserver</button>
+  </form>
+
+  <h2>Rendez-vous programmés</h2>
+  <ul id="appointments"></ul>
+
+  <script type="module" src="/src/hairsalon/app.js"></script>
+</body>
+</html>
